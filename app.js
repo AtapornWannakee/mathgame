@@ -20,6 +20,7 @@ function randomNumber() {
 }
 
 function Start() {
+    event.preventDefault();
     randomNumber();
     const resultText = document.getElementById("Result");
     resultText.innerHTML = "เช็คผลลัพธ์";
