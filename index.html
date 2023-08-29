@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body onload="Start()">
+    <div class="container d-flex gameTitle row m-auto mt-3 p-0">
+        <div class="col-12 text-center">
+            <p>เกมส์คณิตศาสตร์</p>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-between row m-auto g-2">
+        <div class="col-lg-4 col-12 m-auto my-3 ms-lg-5 startArea text-center text-lg-start">
+            <button id="startBtn" onclick="Start()">เริ่ม</button>
+        </div>
+
+        <div class="col-lg-4 col-12 m-auto my-3 me-lg-2 scoreArea text-center text-lg-start">
+            <p id="showScore">Score : 0 / 0</p>
+        </div>
+    </div>
+
+    <form class="container d-flex justify-content-center row m-auto p-0">
+        <div class="d-flex inputNum col-lg-12 row p-0">
+            <input class="col-12 col-lg-3" type="text" id="num1" placeholder="ตัวตั้ง" disabled>
+            <p class="col-12 col-lg-1 text-center" id="Ops"> + </p>
+            <input class="col-12 col-lg-3" type="text" id="num2" placeholder="ตัวกระทำ" disabled>
+            <p class="col-12 col-lg-1 text-center"> = </p>
+            <input class="col-12 col-lg-3 mt-1 mt-lg-0" type="text" id="num3" placeholder="ผลลัพธ์">
+        </div>
+        
+        <div class="d-flex opcheckBox col-lg-3 ps-lg-5 m-auto mt-4 col-12">
+            <label>
+                <input type="radio" name="choice" value="+" id="change" onchange="opsChange(this)" checked>
+                +
+            </label>
+            <label>
+                <input type="radio" name="choice" value="-" id="change" onchange="opsChange(this)">
+                -
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="choice" value="x" id="change" onchange="opsChange(this)">
+                x
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="choice" value="÷" id="change" onchange="opsChange(this)">
+                ÷
+            </label>
+            <br>
+        </div>
+        
+        <div class="d-flex submitArea col-lg-3 m-auto mt-4 col-12">
+            <input type="submit" value="ตอบ" id="submitBtn" onclick="Calc();">
+        </div>
+    </form>
+
+    <div class="container d-flex checkResult m-auto my-5">
+        <p id="Result">เช็คผลลัพธ์</p>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

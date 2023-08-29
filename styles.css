@@ -1,0 +1,67 @@
+.startArea {
+    & #startBtn {
+        padding: 5px 25px 5px 25px;
+        font-size: 20px;
+    }
+}
+
+.gameTitle {
+    justify-content: center;
+    margin-top: 2rem;
+    & p {
+        font-size: 40px;
+    }
+}
+
+.scoreArea {
+    width: 200px;
+
+    #showScore {
+        border: 1px solid black;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+.inputNum {
+    justify-content: center;
+}
+
+.inputNum input {
+    width: 150px;
+    height: 40px;
+}
+
+.inputNum p {
+    margin: 10px;
+}
+
+.opcheckBox {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.opcheckBox input {
+    margin: 0;
+    margin-left: 15px;
+}
+
+.submitArea {
+    justify-content: center;
+
+    & #submitBtn {
+        padding: 5px 20px 5px 20px;
+        font-size: 20px;
+    }
+}
+
+.checkResult {
+    justify-content: center;
+    margin-top: 4rem;
+
+    & p {
+        border: 1px solid black;
+        padding: 20px;
+    }
+}
