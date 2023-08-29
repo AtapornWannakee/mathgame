@@ -1,1 +1,1 @@
-# [mathgame](https://atapornwannakee.github.io/mathgame/)https://atapornwannakee.github.io/mathgame/
+# [mathgame](https://atapornwannakee.github.io/mathgame/)
